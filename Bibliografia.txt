@@ -1,3 +1,15 @@
 GIT:
 https://git-scm.com/docs
 https://github.com/dpatm12/TFG
+
+Raspberry:
+https://www.raspberrypi.org/documentation/
+https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
+https://gpiozero.readthedocs.io/en/stable/
+https://pypi.org/project/mcp3208/
+https://gpiozero.readthedocs.io/en/stable/api_spi.html#mcp3208
+https://stackoverflow.com/questions/9916334/bits-to-string-python
+
+Conexion ssh/scp:
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+https://winscp.net/eng/downloads.php
