@@ -13,3 +13,6 @@ https://stackoverflow.com/questions/9916334/bits-to-string-python
 Conexion ssh/scp:
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 https://winscp.net/eng/downloads.php
+
+Python vs C:
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/python3-gcc.html
