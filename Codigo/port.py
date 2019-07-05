@@ -45,13 +45,14 @@ class Receiver:
 		self.waitSignal()
 		total = ""
 		t = time.time()
-		for j in range(8):
-			b = '0'
-			for i in range(7):
+		for j in range(125):
+			b = ''
+			for i in range(8):
 				b = b + str(port.value())
 				sleep(constants.SLEEP_TIME - ((time.time()-t)))		
 				t = time.time()
 			total = total + str(b)
+			
 		return total
 
 class Transmitter:
@@ -66,20 +67,19 @@ class Transmitter:
 		sleep(constants.SLEEP_TIME/float(10))
 		port.stop()
 		sleep(constants.SLEEP_TIME/float(4.5))
-		# sleep(constants.SLEEP_TIME/float(4.5))
-		# port.transmit(0b1)
-		# sleep(constants.SLEEP_TIME/float(10))
-		# port.stop()
-		# sleep(constants.SLEEP_TIME/float(4.5))
 		
 	def transmitData(self, data):
 		global port
 		self.connect()	
 		t = time.time()	
+		total = ''
 		for x in data:
-			b = format(ord(x), 'b')
+			b = format(ord(x), '08b')
+			total = total + b
+			
 			for c in b:
 				port.transmit(c)
 				sleep(constants.SLEEP_TIME - ((time.time()-t)))
 				port.stop()
 				t = time.time()
+		return total
