@@ -1,21 +1,13 @@
-#include<stdio.h> 
-#include<stdlib.h>
+#include <stdio.h>
+#include "constants.h"
 
-int main() 
-{ 
-    const int PORT_LED = 26;  
-    const int FREQUENCY = 100; 
-    const float SLEEP_TIME = 1.0f/FREQUENCY;  
-    const char MESSAGE[8] = "qwertyui"; 
-      
-	printf("############################################## \n");
+void showConstants(){
+    printf("############################################## \n");
 	printf("CONFIGURATION:");
-	printf("PORT_LED: %d \n", PORT_LED );
+	printf("PORT_LED_RX: %d \n", PORT_LED_RX );
+	printf("PORT_LED_TX: %d \n", PORT_LED_TX );
 	printf("FREQUENCY: %d \n", FREQUENCY );
 	printf("SLEEP_TIME: %f \n", SLEEP_TIME );
 	printf("MESSAGE: %s \n", MESSAGE);
 	printf("############################################## \n");
-    
-	
-    return 0; 
-} 
+}

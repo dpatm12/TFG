@@ -16,3 +16,6 @@ https://winscp.net/eng/downloads.php
 
 Python vs C:
 https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/python3-gcc.html
+
+C GPIO:
+abyz.me.uk/rpi/pigpio/cif.html 
